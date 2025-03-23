@@ -78,7 +78,7 @@ Welcome to the easy-to-use **Event Generator** for **Age of History 3**! This to
 
 ##  How to Create an Event?
 
-1. **Heading Tab:**
+1. **Title Tab:**
    - Select the event type (regular, global, siege);
    - Fill in the fields: Event ID, Title, Description, and other parameters;
    - Specify additional parameters (e.g., Pop Up).
@@ -101,7 +101,7 @@ Welcome to the easy-to-use **Event Generator** for **Age of History 3**! This to
 
 ##  How to Translate an Event?
 
-1. Fill in the **Title** and **Description** fields on the "Heading" tab;
+1. Fill in the **Title** and **Description** fields on the "Title" tab;
 2. Add the desired outcomes and name the buttons;
 3. Go to the **Preview** tab;
 4. Enter the text in the title, description, and button fields (they contain watermarks with hints);
