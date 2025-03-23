@@ -1,0 +1,617 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:EventGenerator_2.ViewModels"
+			 xmlns:local="clr-namespace:EventGenerator_2.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="400"
+             x:Class="EventGenerator_2.Views.MainView"
+             x:DataType="vm:MainViewModel">
+	<Design.DataContext>
+		<vm:MainViewModel/>
+	</Design.DataContext>
+	<TabControl Margin="10"
+				Padding="0 10 0 0">
+		<TabItem Header="{Binding TitleTab}">
+			<Grid
+				RowDefinitions="30,*"
+				ColumnDefinitions="*,*,0.01*,*,*">
+				<StackPanel
+					Orientation="Horizontal"
+					Spacing="10"
+					Grid.Row="0">
+					<TextBlock
+						VerticalAlignment="Center"
+						Text="{Binding ChosenLang}"/>
+					<ComboBox
+						Name="LangBox"
+						ItemsSource="{Binding Languages}"
+						SelectedIndex="{Binding ChosenLanguageINDX, Mode=TwoWay}"/>
+					<Button
+						Content="OK"
+						Height="30"
+						Margin="0 1 0 0"
+						Background="YellowGreen"
+						Foreground="White"
+						FontWeight="Bold"
+						Command="{Binding ChangeLang}"/>
+					<StackPanel
+						Margin="50 -15 0 -10"
+						Orientation="Horizontal"
+						HorizontalAlignment="Center"
+						VerticalAlignment="Center"
+						Spacing="10">
+						<RadioButton
+							GroupName="PlacementRB"
+							Content="{Binding CommonText}"
+							IsChecked="{Binding IsCommon}"/>
+						<RadioButton
+							GroupName="PlacementRB"
+							Content="{Binding GlobalText}"
+							IsChecked="{Binding IsGlobal}"/>
+						<RadioButton
+							GroupName="PlacementRB"
+							Content="{Binding SiegeText}"
+							IsChecked="{Binding IsSiege}"/>
+					</StackPanel>
+				</StackPanel>
+				<StackPanel
+					Spacing="25"
+					Margin="0 25 0 0"
+					Grid.Column="0"
+					Grid.Row="1">
+					<TextBlock TextWrapping="WrapWithOverflow">
+						<Run Text="{Binding EventIDtext}"/>
+						<Run Foreground="Red" Text="*"/>
+					</TextBlock>
+					<TextBlock TextWrapping="WrapWithOverflow">
+						<Run Text="{Binding EventTitle}"/>
+						<Run Foreground="Red" Text="*"/>
+					</TextBlock>
+					<TextBlock TextWrapping="WrapWithOverflow">
+						<Run Text="{Binding EventDescription}"/>
+						<Run Foreground="Red" Text="*"/>
+					</TextBlock>
+					<TextBlock TextWrapping="WrapWithOverflow">
+						<Run Text="{Binding ImageIDtext}"/>
+						<Run Foreground="Red" Text="*"/>
+					</TextBlock>
+				</StackPanel>
+				<StackPanel
+					Spacing="10"
+					Grid.Column="1"
+					Grid.Row="1"
+					Margin="10 20 10 0">
+					<TextBox Watermark="M_ID"
+							 Text="{Binding EventID, Mode=TwoWay}"/>
+					<TextBox Watermark="M_TITLE"
+							 Name="Title"
+							 Text="{Binding Title, Mode=TwoWay}"/>
+					<TextBox Watermark="M_DESCRIPTION"
+							 Name="Desc"
+							 Text="{Binding Description, Mode=TwoWay}"/>
+					<TextBox Watermark="999"
+							 Name="ImageID"
+							 Text="{Binding ImageID, Mode=TwoWay}"/>
+				</StackPanel>
+				<Panel
+					Grid.Column="2"
+					Grid.Row="1"
+					Width="1"
+					Background="Gray"/>
+				<StackPanel
+					Spacing="22"
+					Margin="10 25 0 0"
+					Grid.Column="3"
+					Grid.Row="1">
+					<TextBlock Text="{Binding ShowInMissions}"
+							   TextWrapping="WrapWithOverflow"/>
+					<TextBlock TextWrapping="WrapWithOverflow">
+						<Run Text="{Binding MissionsIDtext}"/>
+						<Run Foreground="Red" Text="*"/>
+					</TextBlock>
+					<TextBlock Text="{Binding OnlyOnce}"
+							   TextWrapping="WrapWithOverflow"/>
+					<TextBlock Text="{Binding PossibleToRun}"
+							   TextWrapping="WrapWithOverflow"/>
+					<TextBlock Text="{Binding PopUp}"
+							   TextWrapping="WrapWithOverflow"/>
+				</StackPanel>
+				<StackPanel
+					Spacing="10"
+					Grid.Column="4"
+					Grid.Row="1"
+					Margin="10 22 10 0">
+					<CheckBox
+						Margin="0 -5 0 0"
+						IsChecked="{Binding IsMissionShow, Mode=TwoWay}"/>
+					<TextBox Watermark="999"
+							 Text="{Binding MissionImageID, Mode=TwoWay}"/>
+					<CheckBox
+						Margin="0 2 0 0"
+						IsChecked="{Binding IsOnlyOnce, Mode=TwoWay}"/>
+					<CheckBox
+						Margin="0 2 0 0"
+						IsChecked="{Binding IsPossibleToRun, Mode=TwoWay}"/>
+					<CheckBox
+						Margin="0 2 0 0"
+						IsChecked="{Binding IsPopUp,
+						Mode=TwoWay}"/>
+					<Button
+						HorizontalAlignment="Right"
+						Background="Crimson"
+						Foreground="White"
+						FontWeight="Bold"
+						Content="{Binding Clear}"
+						Command="{Binding ClearFields}"
+						VerticalAlignment="Stretch"/>
+				</StackPanel>
+			</Grid>
+		</TabItem>
+		<TabItem Header="{Binding TriggerTab}">
+			<Grid
+				RowDefinitions="0.1*,*">
+				<Button
+					Grid.Row="0"
+					Width="100"
+					Background="YellowGreen"
+					Foreground="White"
+					FontWeight="Bold"
+					VerticalAlignment="Stretch"
+					Content="{Binding Add}"
+					CornerRadius="5"
+					Padding="15 5 0 0"
+					Command="{Binding AddTrigger}"/>
+				<ScrollViewer
+					Grid.Row="1">
+					<ItemsControl
+						Margin="5"
+						BorderBrush="LightBlue"
+						BorderThickness="1"
+						CornerRadius="5"
+						Padding="15"
+						ItemsSource="{Binding Triggers}"
+						ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+						<ItemsControl.ItemTemplate>
+							<DataTemplate>
+								<Border
+									BorderBrush="LightBlue"
+									BorderThickness="1"
+									CornerRadius="5"
+									Height="200"
+									Margin="0 0 0 10">
+									<Grid
+										ColumnDefinitions="*,2*">
+										<StackPanel
+											Grid.Column="0"
+											VerticalAlignment="Stretch"
+											HorizontalAlignment="Stretch"
+											Margin="15"
+											Spacing="25">
+											<Button
+												Width="30"
+												Height="30"
+												Margin="0 -5 0 0"
+												Content="X"
+												FontWeight="Bold"
+												Foreground="White"
+												Background="Red"
+												VerticalAlignment="Center"
+												Command="{Binding RemoveTrigger}"/>
+											<Button
+												Height="50"
+												Width="100"
+												HorizontalAlignment="Center"
+												Command="{Binding AddSubTrigger}"
+												Foreground="White"
+												FontWeight="Bold"
+												Background="DarkGreen">
+												<TextBlock
+													Text="+"
+													FontWeight="Bold"
+													FontSize="25"
+													TextAlignment="Center"
+													VerticalAlignment="Center"/>
+											</Button>
+											<ComboBox
+												Width="150"
+												ItemsSource="{Binding TriggerLogic}"
+												SelectedIndex="{Binding Logic, Mode=TwoWay}"
+												HorizontalAlignment="Center"/>
+										</StackPanel>
+										<ScrollViewer
+											Grid.Column="1">
+											<ItemsControl
+												Margin="5"
+												BorderBrush="LightBlue"
+												BorderThickness="1"
+												CornerRadius="5"
+												Padding="15"
+												ItemsSource="{Binding SubTriggers}"
+												ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+												<ItemsControl.ItemTemplate>
+													<DataTemplate>
+														<Border
+															BorderBrush="LightBlue"
+															BorderThickness="1"
+															CornerRadius="5"
+															Height="125"
+															Padding="5"
+															Margin="0 0 0 5">
+															<Grid
+																RowDefinitions="*,*,*">
+																<StackPanel
+																	Spacing="50"
+																	Grid.Row="0"
+																	HorizontalAlignment="Right"
+																	Orientation="Horizontal">
+																	<ComboBox
+																		ItemsSource="{Binding TriggerLogic}"
+																		Width="150"
+																		SelectedIndex="{Binding Logic, Mode=TwoWay}"/>
+																	<Button
+																		Width="30"
+																		Height="30"
+																		Margin="0 -5 0 0"
+																		Content="X"
+																		FontWeight="Bold"
+																		Foreground="White"
+																		Background="Red"
+																		VerticalAlignment="Center"
+																		Command="{Binding RemoveSubTrigger}"/>
+																</StackPanel>
+																<StackPanel
+																	Grid.Row="1"
+																	Orientation="Horizontal"
+																	Spacing="25">
+																	<ComboBox
+																		Width="250"
+																		ItemsSource="{Binding TriggerVariants}"
+																		SelectedItem="{Binding TriggerVariant, Mode=TwoWay}"/>
+																</StackPanel>
+																<TextBox
+																	Grid.Row="2"
+																	Watermark="99, pol, event_id, pol=99..."
+																	Text="{Binding TriggerParametr, Mode=TwoWay}">
+																	<ToolTip.Tip>
+																		<TextBlock
+																			Text="{Binding Mask}"
+																			TextWrapping="WrapWithOverflow"
+																			TextAlignment="Center"/>
+																	</ToolTip.Tip>
+																</TextBox>
+															</Grid>
+														</Border>
+													</DataTemplate>
+												</ItemsControl.ItemTemplate>
+											</ItemsControl>
+										</ScrollViewer>
+									</Grid>
+								</Border>
+							</DataTemplate>
+						</ItemsControl.ItemTemplate>
+					</ItemsControl>
+				</ScrollViewer>
+			</Grid>
+		</TabItem>
+		<TabItem Header="{Binding OutcomeTab}">
+			<Grid
+				RowDefinitions="0.1*,*,0.1*">
+				<Button
+					Background="YellowGreen"
+					Foreground="White"
+					FontWeight="Bold"
+					Grid.Row="0"
+					Width="100"
+					VerticalAlignment="Stretch"
+					Content="{Binding Add}"
+					CornerRadius="5"
+					Padding="15 5 0 0"
+					Command="{Binding AddOutcome}"/>
+				<ScrollViewer
+					Grid.Row="1">
+					<ItemsControl
+						Margin="5"
+						BorderBrush="LightBlue"
+						BorderThickness="1"
+						CornerRadius="5"
+						Padding="15"
+						ItemsSource="{Binding Outcomes}"
+						ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+						<ItemsControl.ItemTemplate>
+							<DataTemplate>
+								<Border
+									BorderBrush="LightBlue"
+									BorderThickness="1"
+									CornerRadius="5"
+									Height="225"
+									Margin="0 0 0 15">
+									<Grid
+										ColumnDefinitions="*,2*">
+										<StackPanel
+											Grid.Column="0"
+											VerticalAlignment="Stretch"
+											HorizontalAlignment="Stretch"
+											Spacing="10"
+											Margin="15">
+											<Button
+												Width="30"
+												Height="30"
+												Content="X"
+												FontWeight="Bold"
+												Foreground="White"
+												Background="Red"
+												VerticalAlignment="Center"
+												HorizontalAlignment="Left"
+												Command="{Binding RemoveOutcome}"/>
+											<Button
+												Height="50"
+												Width="100"
+												HorizontalAlignment="Center"
+												Background="DarkGreen"
+												Foreground="White"
+												FontWeight="Bold"
+												FontSize="13"
+												Command="{Binding AddSubOutcome}">
+												<TextBlock
+													Text="+"
+													FontWeight="Bold"
+													FontSize="25"
+													VerticalAlignment="Center"
+													TextAlignment="Center"/>
+											</Button>
+											<TextBox
+												Watermark="BUTTON_NAME"
+												Text="{Binding ButtonName, Mode=TwoWay,
+												UpdateSourceTrigger=PropertyChanged}"/>
+											<TextBlock
+												Text="AI:"
+												Margin="0 0 0 -10"/>
+											<TextBox
+												Watermark="100"
+												Text="{Binding AIChance, Mode=TwoWay,
+												UpdateSourceTrigger=PropertyChanged}"/>
+										</StackPanel>
+										<ScrollViewer
+											Grid.Column="1">
+											<ItemsControl
+												Margin="5"
+												BorderBrush="LightBlue"
+												BorderThickness="1"
+												CornerRadius="5"
+												Padding="15"
+												ItemsSource="{Binding SubOutcomes}"
+												ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+												<ItemsControl.ItemTemplate>
+													<DataTemplate>
+														<Border
+															BorderBrush="LightBlue"
+															BorderThickness="1"
+															CornerRadius="5"
+															Height="80"
+															Padding="5"
+															Margin="0 0 0 5">
+															<Grid
+																RowDefinitions="*,*">
+																<StackPanel
+																	Grid.Row="0"
+																	Orientation="Horizontal"
+																	Spacing="250">
+																	<ComboBox
+																		Grid.Row="0"
+																		Width="250"
+																		ItemsSource="{Binding OutcomeVariants}"
+																		SelectedItem="{Binding OutcomeVariant, Mode=TwoWay}"/>
+																	<Button
+																		Width="30"
+																		Height="30"
+																		Margin="0 -5 0 0"
+																		Content="X"
+																		FontWeight="Bold"
+																		Foreground="White"
+																		Background="Red"
+																		VerticalAlignment="Center"
+																		Command="{Binding RemoveSubOutcome}"/>
+																</StackPanel>
+																<TextBox
+																	Grid.Row="1"
+																	Watermark="99, pol, event_id, pol=99..."
+																	Text="{Binding OutcomeParametr, Mode=TwoWay}">
+																	<ToolTip.Tip>
+																		<TextBlock
+																			Text="{Binding Mask}"
+																			TextWrapping="WrapWithOverflow"
+																			TextAlignment="Center"/>
+																	</ToolTip.Tip>
+																</TextBox>
+															</Grid>
+														</Border>
+													</DataTemplate>
+												</ItemsControl.ItemTemplate>
+											</ItemsControl>
+										</ScrollViewer>
+									</Grid>
+								</Border>
+							</DataTemplate>
+						</ItemsControl.ItemTemplate>
+					</ItemsControl>
+				</ScrollViewer>
+				<StackPanel
+					Grid.Row="2"
+					Orientation="Horizontal"
+					HorizontalAlignment="Right"
+					Spacing="25">
+					<CheckBox
+						VerticalAlignment="Center"
+						IsChecked="{Binding IsShowPath}"
+						Content="{Binding ShowPathText}"/>
+					<Button
+						Width="135"
+						VerticalAlignment="Stretch"
+						HorizontalAlignment="Right"
+						Background="DarkGreen"
+						Foreground="White"
+						Content="{Binding CreateEventtext}"
+						CornerRadius="5"
+						Padding="15 5 0 0"
+						Command="{Binding CreateEvent}"/>
+				</StackPanel>
+			</Grid>
+		</TabItem>
+		<TabItem Header="{Binding PreviewTab}">
+			<Grid
+				RowDefinitions="0.1*,*">
+				<StackPanel
+					Grid.Row="0"
+					Orientation="Horizontal"
+					HorizontalAlignment="Center"
+					Spacing="10">
+					<TextBlock
+						VerticalAlignment="Center"
+						Text="{Binding TranslLang}"/>
+					<TextBlock
+						VerticalAlignment="Center"
+						Text="Bundle_"/>
+					<TextBox
+						Padding="5"
+						
+						Text="{Binding TranslateLang,
+						Mode=TwoWay}"
+						Watermark="Empty, if English"
+						Margin="-8 0 0 0"/>
+					<Button
+						Margin="10 0 0 0"
+						Background="DarkGreen"
+						Foreground="White"
+						Content="{Binding TranslButText}"
+						Command="{Binding CreateTranslation}"/>
+				</StackPanel>
+				<ScrollViewer
+					Grid.Row="1"
+					CornerRadius="2"
+					Margin="200 5 200 5"
+					Background="Black">
+					<StackPanel>
+						<Border
+							MinHeight="25"
+							Background="DarkRed"
+							BorderBrush="DarkGoldenRod"
+							BorderThickness="2"
+							CornerRadius="0"
+							BoxShadow="inset 0 0 10 1 Black">
+							<TextBox
+									BorderThickness="0"
+									CornerRadius="0"
+									VerticalAlignment="Stretch"
+									HorizontalAlignment="Stretch"
+									Background="Transparent"
+									TextWrapping="Wrap"
+									FontWeight="Medium"
+									Foreground="White"
+									AcceptsReturn="True"
+									TextAlignment="Center"
+									
+									Text="{Binding TranslateTitle,
+									Mode=TwoWay}"
+									Watermark="{Binding #Title.Text,
+									TargetNullValue=NaN,
+									UpdateSourceTrigger=PropertyChanged}">
+								<TextBox.Styles>
+									<Style Selector="TextBox:focus /template/ Border">
+										<Setter Property="Background" Value="Transparent"/>
+										<Setter Property="CornerRadius" Value="2"/>
+									</Style>
+								</TextBox.Styles>
+							</TextBox>
+						</Border>
+						<Border
+							Height="100"
+							Background="LightYellow"
+							CornerRadius="0"
+							BoxShadow="inset 0 0 10 1 Black">
+							<TextBlock
+								VerticalAlignment="Center"
+								HorizontalAlignment="Center"
+								Foreground="DarkGray"
+								FontWeight="Medium"
+								Text="{Binding #ImageID.Text,
+								UpdateSourceTrigger=PropertyChanged}"/>
+						</Border>
+						<Border
+							MinHeight="100"
+							Background="Black"
+							CornerRadius="0"
+							BoxShadow="inset 0 0 10 1 DarkGray">
+							<TextBox
+									BorderThickness="0"
+									FontSize="12"
+									Background="Transparent"
+									Foreground="White"
+									FontWeight="Light"
+									CornerRadius="0"
+									TextWrapping="Wrap"
+									AcceptsReturn="True"
+									TextAlignment="Left"
+									VerticalAlignment="Stretch"
+									HorizontalAlignment="Stretch"
+									
+									Text="{Binding TranslateDesc,
+									Mode=TwoWay}"
+									Watermark="{Binding #Desc.Text,
+									TargetNullValue=NaN,
+									UpdateSourceTrigger=PropertyChanged}">
+								<TextBox.Styles>
+									<Style Selector="TextBox:focus /template/ Border">
+										<Setter Property="Background" Value="Transparent"/>
+										<Setter Property="CornerRadius" Value="2"/>
+									</Style>
+								</TextBox.Styles>
+							</TextBox>
+						</Border>
+						<ItemsControl
+							ItemsSource="{Binding Outcomes}"
+							ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+							<ItemsControl.ItemTemplate>
+								<DataTemplate>
+									<Border
+										MinHeight="35"
+										Margin="5 10 5 2.5"
+										Background="Maroon"
+										BorderBrush="Sienna"
+										BorderThickness="1"
+										CornerRadius="0"
+										BoxShadow="inset 0 0 55 10 Black">
+										<TextBox
+												BorderThickness="0"
+												CornerRadius="0"
+												TextWrapping="Wrap"
+												AcceptsReturn="True"
+												Foreground="White"
+												Background="Transparent"
+												VerticalAlignment="Stretch"
+												HorizontalAlignment="Stretch"
+												TextAlignment="Center"
+												
+												Watermark="{Binding ButtonName,
+												TargetNullValue=NaN,
+												UpdateSourceTrigger=PropertyChanged}"
+												Text="{Binding ButtonText,
+												Mode=TwoWay,
+												UpdateSourceTrigger=PropertyChanged}">
+											<TextBox.Styles>
+												<Style Selector="TextBox:focus /template/ Border">
+													<Setter Property="Background" Value="Transparent"/>
+													<Setter Property="CornerRadius" Value="2"/>
+												</Style>
+											</TextBox.Styles>
+										</TextBox>
+									</Border>
+								</DataTemplate>
+							</ItemsControl.ItemTemplate>
+						</ItemsControl>
+					</StackPanel>
+				</ScrollViewer>
+			</Grid>
+		</TabItem>
+	</TabControl>
+</UserControl>
