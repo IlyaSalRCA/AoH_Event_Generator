@@ -1,0 +1,168 @@
+Play music (.ogg) from a folder (including files not listed in the folder)
+Instantly trigger an event (ID)
+Add a global variable
+Add a local variable for the civ.
+Add a national province to the civ. (Including sea provinces)
+Remove a national province from the civ. (Including sea provinces)
+The player will control this civilization
+[Civ] Replace the civilization's tag
+Replace this civilization's tag with another
+The civ. will dissolve into claims within its provinces, except those where only its claim exists
+[Civ] Gold
+[Civ] Monthly gold income
+[Civ] Legacy points
+[Civ] Monthly legacy
+[Civ] Research points
+[Civ] Advantage points
+[Civ] Manpower
+[Civ] Inflation
+[Civ] AI recipient's aggression of the event
+[Civ] Aggressive expansion
+[Civ] Move the capital
+[Civ] Annex provinces (ID) from everyone
+[Civ] Annex provinces (ID) only from this civilization
+This civilization will annex provinces only from another civilization
+[Civ] Annex a civilization
+[Civ] Annexed by a civilization
+[Civ] Make a vassal/puppet
+[Civ] Change ideology
+Change the civilization's ideology
+[Civ] Change religion
+Change the civilization's religion
+Improve/deteriorate relations between civilizations by this amount
+Set relations between civilizations to this value
+[Civ] Declare war, and this can also be used to track time since the start of an event (If combined with the condition civ_is_at_war_days_over)
+This civilization will declare war on another civilization, and this can also be used to track time since the start of an event (If combined with the condition civ_is_at_war_days_over)
+[Civ] Add a new army with these unit IDs to the capital
+Create a military alliance
+[Civ] Join a special alliance (HRE, Shogunate) of this ID (At level 1)
+[Civ] Join a special alliance (HRE, Shogunate) of this ID (At level 2)
+[Civ] Leave a special alliance (HRE, Shogunate) of this ID
+Create a non-aggression pact
+This civilization will grant military access to another civilization
+This civilization will guarantee the independence of another civilization
+Create a defensive pact between these civilizations
+Create a truce between these civilizations
+[Civ] Add a general
+[Civ] Add a general from game/characters/
+[Civ] Add a general from game/characters/ with [] attack and [] defense
+[Civ] Add a random advisor (0 - admin / 1 - econ / 2 - inn / 3 - mil)
+[Civ] Add an advisor (0 - admin / 1 - econ / 2 - inn / 3 - mil) from game/characters/
+[Civ] Kill an advisor (0 - admin / 1 - econ / 2 - inn / 3 - mil)
+[Civ] Promote an advisor (0 - admin / 1 - econ / 2 - inn / 3 - mil)
+[Civ] Add a ruler with a portrait from mods/YOUR_MOD_NAME/game/rulers/rulersImages/H/ and a birthdate of day/month/year
+[Civ] Guaranteed to kill the ruler
+[Civ] Chance to kill the ruler with a chance (%)
+[Civ] Military academy will improve/deteriorate by [_] levels
+[Civ] Military academy for generals will improve/deteriorate by [_] levels
+[Civ] Capital will improve/deteriorate by [_] levels
+[Civ] Supreme court will improve/deteriorate by [_] levels
+[Civ] Nuclear reactor will improve/deteriorate by [_] levels
+[Civ] Bonus duration (bonus in years), and this can also be used to track time since the start of an event
+[Civ] Monthly income (requires bonus duration)
+[Civ] Monthly legacy (requires bonus duration)
+[Civ] Monthly legacy (%) (requires bonus duration)
+[Civ] Maximum gold (requires bonus duration)
+[Civ] Tax efficiency (requires bonus duration)
+[Civ] Growth rate (requires bonus duration)
+[Civ] Province maintenance (requires bonus duration)
+[Civ] Building maintenance (requires bonus duration)
+[Civ] Maintenance (requires bonus duration)
+[Civ] Production efficiency (requires bonus duration)
+[Civ] Production income (requires bonus duration)
+[Civ] Tax income (requires bonus duration)
+[Civ] Economic income (requires bonus duration)
+[Civ] Corruption (requires bonus duration)
+[Civ] Inflation (requires bonus duration)
+[Civ] Research (requires bonus duration)
+[Civ] Research points (requires bonus duration)
+[Civ] Maximum manpower (requires bonus duration)
+[Civ] Maximum manpower (%) (requires bonus duration)
+[Civ] Manpower recovery speed (requires bonus duration)
+[Civ] Reinforcement speed (requires bonus duration)
+[Civ] Army morale recovery (requires bonus duration)
+[Civ] Army maintenance (requires bonus duration)
+[Civ] Army recruitment time (requires bonus duration)
+[Civ] Army recruitment cost (requires bonus duration)
+[Civ] First line recruitment cost (requires bonus duration)
+[Civ] Second line recruitment cost (requires bonus duration)
+[Civ] General's attack (requires bonus duration)
+[Civ] General's defense (requires bonus duration)
+[Civ] Unit attack (requires bonus duration)
+[Civ] Unit defense (requires bonus duration)
+[Civ] Regiment limit (requires bonus duration)
+[Civ] Combat width (requires bonus duration)
+[Civ] Discipline (requires bonus duration)
+[Civ] Siege efficiency (requires bonus duration)
+[Civ] Maximum morale (requires bonus duration)
+[Civ] Army movement speed (requires bonus duration)
+[Civ] Manpower recovery from army disbandment (requires bonus duration)
+[Civ] Military points cost (requires bonus duration)
+[Civ] Construction cost (requires bonus duration)
+[Civ] Administrative building cost (requires bonus duration)
+[Civ] Military building cost (requires bonus duration)
+[Civ] Economic building cost (requires bonus duration)
+[Civ] Construction time (requires bonus duration)
+[Civ] Economic investment cost (requires bonus duration)
+[Civ] Manpower increase cost (requires bonus duration)
+[Civ] Tax efficiency increase cost (requires bonus duration)
+[Civ] Infrastructure development cost (requires bonus duration)
+[Civ] Growth rate increase cost (requires bonus duration)
+[Civ] Diplomatic points (requires bonus duration)
+[Civ] Relations improvement modifier (requires bonus duration)
+[Civ] Vassal income (requires bonus duration)
+[Civ] Aggressive expansion (requires bonus duration)
+[Civ] National province cost (requires bonus duration)
+[Civ] Religion cost (requires bonus duration)
+[Civ] Revolution risk (requires bonus duration)
+[Civ] Loan interest rate (requires bonus duration)
+[Civ] Loan limit (requires bonus duration)
+[Civ] Lifespan of all characters (requires bonus duration)
+[Civ] Advisor cost (requires bonus duration)
+[Civ] Maximum advisor level (requires bonus duration)
+[Civ] General cost (requires bonus duration)
+[Civ] Disease mortality (requires bonus duration)
+[Civ] A random province will gain [_] economy
+[Civ] The capital will gain [_] economy
+[Civ] All provinces will gain [_] economy
+Province (ID) will gain [_] economy
+[Civ] A random province will improve tax efficiency by [_]
+[Civ] The capital will improve tax efficiency by [_]
+[Civ] All provinces will improve tax efficiency by [_]
+Province (ID) will improve tax efficiency by [_]
+[Civ] A random province will gain [_] manpower
+[Civ] The capital will gain [_] manpower
+[Civ] All provinces will gain [_] manpower
+Province (ID) will gain [_] manpower
+[Civ] A random province will improve growth rate by [_]
+[Civ] The capital will improve growth rate by [_]
+[Civ] All provinces will improve growth rates by [_]
+Province (ID) will improve growth rate by [_]
+[Civ] A random province will gain [_] population
+[Civ] The capital will gain [_] population
+[Civ] All provinces will gain [_] population
+[Civ] A random province will change religion ID to [_]
+[Civ] The capital will change religion ID to [_]
+[Civ] All provinces will change religion ID to [_]
+Province (ID) will change religion ID to [_]
+[Civ] A random province will be [_] destroyed
+[Civ] The capital will be [_] destroyed
+[Civ] All provinces will be [_] destroyed
+Province (ID) will be [_] destroyed
+[Civ] A random province will gain [_] unrest
+[Civ] The capital will gain [_] unrest
+[Civ] All provinces will gain [_] unrest
+Province (ID) will gain [_] unrest
+[Civ] A random province will gain [_] infrastructure
+[Civ] The capital will gain [_] infrastructure
+[Civ] All provinces will gain [_] infrastructure
+Province (ID) will gain [_] infrastructure
+Random price change by (%) minimum + random (%) for [] months + random [] months
+Random price increase by (%) minimum + random (%) for [] months + random [] months
+Random price decrease by (%) minimum + random (%) for [] months + random [] months
+Change resource (ID) price by (%) minimum + random (%) for [] months + random [] months
+Increase resource (ID) price by (%) minimum + random (%) for [] months + random [] months
+Decrease resource (ID) price by (%) minimum + random (%) for [] months + random [] months
+Change goods group (0 - food, 1 - goods, 2 - luxury goods, 3 - luxury, 4 - production resources) price by (%) minimum + random (%) for [] months + random [] months
+Increase goods group (0 - food, 1 - goods, 2 - luxury goods, 3 - luxury, 4 - production resources) price by (%) minimum + random (%) for [] months + random [] months
+Decrease goods group (0 - food, 1 - goods, 2 - luxury goods, 3 - luxury, 4 - production resources) price by (%) minimum + random (%) for [] months + random [] months

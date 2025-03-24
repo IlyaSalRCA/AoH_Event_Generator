@@ -1,0 +1,229 @@
+Set [Civ.]
+Probability (%) of the event annually
+Presence of a global variable
+Absence of a global variable
+Presence of a local variable for the civilization
+Province (ID) has a claim by the civ.
+Strictly not more than in-game days have passed since the start of the session
+Strictly not less than in-game days have passed since the start of the session
+Current date day/month/year
+In-game year is not strictly greater than
+In-game year is not strictly less than
+[Civ] Days at war are not strictly greater than, and this can also be used to track time since the start of an event (if combined with one of the outcomes: declare_war or declare_war2)
+Player controls this civilization
+Player does not control this civilization
+[Civ] Government form ID is
+Civ. exists on the map with this government form
+Civ. does not exist on the map with this government form
+Civ. exists on the map with any government form
+Civ. does not exist on the map with any government form
+[Civ] Is a vassal/puppet
+[Civ] Is not a vassal/puppet
+ID-religion of this civ. is
+ID-religion of this civ. is not
+ID-government form of this civ. is
+ID-government form of this civ. is not
+[Civ] Leader of any special alliance (HRE, Shogunate)
+[Civ] Leader of the special alliance (HRE, Shogunate) of this ID
+[Civ] Member of the special alliance (HRE, Shogunate) of this ID
+[Civ] Not a member of the special alliance (HRE, Shogunate) of this ID
+Civ.'s attitude towards another civ. is higher
+Civ.'s attitude towards another civ. is lower
+Province (ID) is controlled by the civ.
+Province (ID) is not controlled by the civ.
+[Civ] Gold is not strictly greater than
+[Civ] Gold is not strictly less than
+[Civ] Gold is greater than the maximum amount
+[Civ] Total income is not strictly greater than
+[Civ] Total income is not strictly less than
+[Civ] Tax income is not strictly greater than
+[Civ] Tax income is not strictly less than
+[Civ] Economic income is not strictly greater than
+[Civ] Economic income is not strictly less than
+[Civ] Production income is not strictly greater than
+[Civ] Production income is not strictly less than
+[Civ] Inflation is not strictly greater than
+[Civ] Inflation is not strictly less than
+[Civ] Number of loans is not strictly greater than
+[Civ] Number of loans is not strictly less than
+[Civ] Legacy is not strictly greater than
+[Civ] Legacy is not strictly less than
+[Civ] Monthly legacy is not strictly greater than
+[Civ] Monthly legacy is not strictly less than
+[Civ] Number of unlocked legacies is not strictly greater than
+[Civ] Number of unlocked legacies is not strictly less than
+[Civ] Monthly research is not strictly greater than
+[Civ] Monthly research is not strictly less than
+[Civ] Number of unlocked technologies is not strictly greater than
+[Civ] Number of unlocked technologies is not strictly less than
+[Civ] Number of unlocked advantages is not strictly greater than
+[Civ] Number of unlocked advantages is not strictly less than
+[Civ] Diplomatic points are not strictly greater than
+[Civ] Diplomatic points are not strictly less than
+[Civ] Economic investments are not strictly greater than
+[Civ] Economic investments are not strictly less than
+[Civ] Growth rate increase is not strictly greater than
+[Civ] Growth rate increase is not strictly less than
+[Civ] Tax efficiency increase is not strictly greater than
+[Civ] Tax efficiency increase is not strictly less than
+[Civ] Manpower increase is not strictly greater than
+[Civ] Manpower increase is not strictly less than
+[Civ] Infrastructure development is not strictly greater than
+[Civ] Infrastructure development is not strictly less than
+[Civ] Number of constructed buildings is not strictly greater than
+[Civ] Number of constructed buildings is not strictly less than
+[Civ] Number of constructed administrative buildings is not strictly greater than
+[Civ] Number of constructed administrative buildings is not strictly less than
+[Civ] Number of constructed economic buildings is not strictly greater than
+[Civ] Number of constructed economic buildings is not strictly less than
+[Civ] Number of constructed military buildings is not strictly greater than
+[Civ] Number of constructed military buildings is not strictly less than
+Province (ID) is the capital
+[Civ] Number of buildings in the capital is not strictly greater than
+[Civ] Number of buildings in the capital is not strictly less than
+[Civ] Number of unique buildings in the capital is not strictly greater than
+[Civ] Number of unique buildings in the capital is not strictly less than
+The capital has building [] from Buildings.json of level []
+Province (ID) has building [] from Buildings.json of level []
+[Civ] Tax efficiency in the capital is not strictly greater than
+[Civ] Tax efficiency in the capital is not strictly less than
+[Civ] Capital's economy is not strictly greater than
+[Civ] Capital's economy is not strictly less than
+[Civ] Capital's manpower is not strictly greater than
+[Civ] Capital's manpower is not strictly less than
+[Civ] Capital's growth rate is not strictly greater than
+[Civ] Capital's growth rate is not strictly less than
+[Civ] Capital's infrastructure is not strictly greater than
+[Civ] Capital's infrastructure is not strictly less than
+[Civ] Capital's population is not strictly greater than
+[Civ] Capital's population is not strictly less than
+[Civ] Capital's defense level is not strictly greater than
+[Civ] Capital's defense level is not strictly less than
+[Civ] Capital's income is not strictly greater than
+[Civ] Capital's income is not strictly less than
+[Civ] Unrest in the capital is not strictly greater than
+[Civ] Unrest in the capital is not strictly less than
+[Civ] Military academy level is not strictly greater than
+[Civ] Military academy level is not strictly less than
+[Civ] Military academy level for generals is not strictly greater than
+[Civ] Military academy level for generals is not strictly less than
+[Civ] Capital level is not strictly greater than
+[Civ] Capital level is not strictly less than
+[Civ] Supreme court level is not strictly greater than
+[Civ] Supreme court level is not strictly less than
+[Civ] Nuclear reactor level is not strictly greater than
+[Civ] Nuclear reactor level is not strictly less than
+[Civ] Number of provinces is not strictly greater than
+[Civ] Number of provinces is not strictly less than
+[Civ] Number of provinces is equal to
+[Civ] Is at war
+[Civ] Is not at war
+[Civ] Number of wars is not strictly greater than
+[Civ] Number of wars is not strictly less than
+[Civ] Number of occupied provinces is not strictly greater than
+[Civ] Number of occupied provinces is not strictly less than
+[Civ] Number of regiments exceeds the limit
+Province (ID) is occupied
+Province (ID) is not occupied
+Province (ID) is under siege
+[Civ] Capital is occupied
+[Civ] Capital is not occupied
+[Civ] Capital is under siege
+[Civ] Manpower is not strictly greater than
+[Civ] Manpower is not strictly less than
+[Civ] Manpower limit is not strictly greater than
+[Civ] Manpower limit is not strictly less than
+[Civ] Manpower percentage is not strictly greater than
+[Civ] Manpower percentage is not strictly less than
+[Civ] Number of regiments is not strictly greater than
+[Civ] Number of regiments is not strictly less than
+[Civ] Regiment limit is not strictly greater than
+[Civ] Regiment limit is not strictly less than
+[Civ] Combat width is not strictly greater than
+[Civ] Combat width is not strictly less than
+[Civ] Number of allies is not strictly greater than
+[Civ] Number of allies is not strictly less than
+[Civ] Number of defensive pacts is not strictly greater than
+[Civ] Number of defensive pacts is not strictly less than
+[Civ] Number of non-aggression pacts is not strictly greater than
+[Civ] Number of non-aggression pacts is not strictly less than
+[Civ] Number of vassals/puppets is not strictly greater than
+[Civ] Number of vassals/puppets is not strictly less than
+[Civ] Number of neighbors is not strictly greater than
+[Civ] Number of neighbors is not strictly less than
+[Civ] Prestige is not strictly greater than
+[Civ] Prestige is not strictly less than
+[Civ] Ranking position is not strictly higher
+[Civ] Ranking position is not strictly lower
+[Civ] ID-religion is
+[Civ] Capital's ID-religion is
+[Civ] Capital province's ID-continent is
+[Civ] Capital province's ID-continent is not
+[Civ] Presence of ID-resource
+[Civ] Largest producer of more than [_] resources
+[Civ] Is the largest producer of the resource by ID
+[Civ] Civilization produces more than [_] units of ID-resource
+[Civ] Civilization produces more than [_] units of ID-resource
+The largest producer of ID-resource produces more than [_] units of the resource
+[Civ] Number of hired advisors is not strictly greater than
+[Civ] Number of hired advisors is not strictly less than
+[Civ] Advisor's age (0 - admin / 1 - econ / 2 - inn / 3 - mil) is not strictly greater than
+[Civ] Administrative advisor's skill is not strictly greater than
+[Civ] Administrative advisor's skill is not strictly less than
+[Civ] Economic advisor's skill is not strictly greater than
+[Civ] Economic advisor's skill is not strictly less than
+[Civ] Innovation advisor's skill is not strictly greater than
+[Civ] Innovation advisor's skill is not strictly less than
+[Civ] Military advisor's skill is not strictly greater than
+[Civ] Military advisor's skill is not strictly less than
+[Civ] Advisor's bonus to production efficiency is not strictly greater than
+[Civ] Advisor's bonus to construction cost is not strictly greater than
+[Civ] Civilization's population is not strictly greater than
+[Civ] Civilization's population is not strictly less than
+Province (ID)'s population is not strictly greater than
+Province (ID)'s population is not strictly less than
+[Civ] Civilization's economy is not strictly greater than
+[Civ] Civilization's economy is not strictly less than
+Province (ID)'s economy is not strictly greater than
+Province (ID)'s economy is not strictly less than
+Province (ID)'s growth rate is not strictly greater than
+Province (ID)'s growth rate is not strictly less than
+Province (ID)'s tax efficiency is not strictly greater than
+Province (ID)'s tax efficiency is not strictly less than
+Province (ID)'s manpower is not strictly greater than
+Province (ID)'s manpower is not strictly less than
+Province (ID)'s income is not strictly greater than
+Province (ID)'s income is not strictly less than
+Province (ID)'s ID-religion is equal to
+Province (ID)'s ID-religion is not equal to
+Unrest in province (ID) is not strictly greater than
+Unrest in province (ID) is not strictly less than
+Province (ID)'s infrastructure is not strictly greater than
+Province (ID)'s infrastructure is not strictly less than
+Number of buildings in province (ID) is not strictly greater than
+Number of buildings in province (ID) is not strictly less than
+Building limit in province (ID) is not strictly greater than
+Building limit in province (ID) is not strictly less than
+Province (ID)'s defense level is not strictly greater than
+Province (ID)'s defense level is not strictly less than
+The first civ. is a vassal of another civ.
+The first civ. has more provinces than another civ.
+The first civ. has more population than another civ.
+The first civ. has a larger economy than another civ.
+The first civ. has a larger regiment limit than another civ.
+The first civ. has more regiments than another civ.
+The first civ. has a higher ranking than another civ.
+The first civ. has more technologies than another civ.
+The given civs. are neighbors
+The given civs. are not neighbors
+The given civs. are mutual rivals
+The first civ. has a rivalry with another civ.
+The first civ. does not have a rivalry with another civ.
+The given civs. are at war
+The given civs. are not at war
+The given civs. have a defensive pact
+The given civs. have a non-aggression pact
+The given civs. are in an alliance
+The given civs. have a truce
+The first civ. has military access to another civ.
+The first civ. guarantees another civ.
