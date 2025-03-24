@@ -123,5 +123,129 @@ Welcome to the easy-to-use **Event Generator** for **Age of History 3**! This to
 
 ---
 
+# :cn: Age of History 3 事件生成器！
+
+欢迎使用这款简单便捷的 **Age of History 3** 事件生成工具！它能帮助你为游戏创建和自定义事件，并支持翻译成任意语言。
+
+---
+
+## 生成器功能
+
+- **从完整触发器列表中选择**，附带格式提示；
+- **从完整结果列表中选择**，附带格式提示；
+- **自动将事件分类**：全局事件、普通事件和围城事件；
+- **支持多语言翻译** 生成器界面；
+- **本地化事件内容** 至任意语言。
+
+---
+
+## 如何创建事件？
+
+1. **“标题”选项卡：**
+   - 选择事件类型（普通、全局、围城）；
+   - 填写字段：事件ID、标题、描述等参数；
+   - 设置附加选项（如Pop Up弹窗）。
+
+2. **“触发器”选项卡：**
+   - 添加触发器；
+   - 选择逻辑变量（AND, OR, AND NOT, OR NOT）；
+   - 添加子触发器；
+   - 为子触发器设置逻辑变量，选择触发器类型及参数。
+
+3. **“结果”选项卡：**
+   - 添加结果；
+   - 命名结果按钮并设置AI选择概率；
+   - 添加子结果；
+   - 选择结果类型并填写参数。
+
+4. **生成事件！**
+
+---
+
+## 如何翻译事件？
+
+1. 在“标题”选项卡填写**标题**和**描述**；
+2. 添加结果并命名按钮；
+3. 切换到**预览**选项卡；
+4. 在标题、描述和按钮字段中输入翻译文本（字段会显示提示名称）；
+5. 在 **Bundle_** 字段选择目标语言（*留空则默认翻译为英语**，或输入语言代码如 `ru`**）；
+6. **生成翻译版**事件！
+
+---
+
+## 如何翻译生成器界面？
+
+1. 进入 **languages** 文件夹；
+2. 创建语言代码命名的 **.json** 文件（如 `RU.json`）；
+3. 参照其他翻译文件填写内容；
+4. 在 **languages.txt** 中新增一行添加该语言代码；
+5. 在 **trigger_outcomes** 文件夹内创建语言代码子文件夹（如 `RU`）；
+6. 添加翻译文件 **outcomes_desc.txt**（168行）和 **triggers_desc.txt**（229行）；
+7. **您做得太棒了！** 
+
+---
+
+# :tr: Age of History 3 Olay Üreticisi!
+
+**Age of History 3** için basit ve kullanıcı dostu bu olay üreticisine hoş geldiniz! Bu araç, oyununuz için özel olaylar oluşturmanıza, düzenlemenize ve bunları istediğiniz dile çevirmenize yardımcı olacaktır.
+
+---
+
+## Üretici Özellikleri
+
+- **Tam tetikleyici listesinden seçim** (biçimlendirme ipuçlarıyla birlikte);
+- **Tam sonuç listesinden seçim** (biçimlendirme ipuçlarıyla birlikte);
+- **Olayların otomatik sınıflandırılması**: küresel olaylar, normal olaylar ve kuşatma olayları;
+- **Çoklu dil desteği** (arayüz çevirisi);
+- **Olayların lokalizasyonu** (istediğiniz dile çevirme).
+
+---
+
+## Olay Nasıl Oluşturulur?
+
+1. **"Başlık" Sekmesi:**
+   - Olay türünü seçin (normal, küresel, kuşatma);
+   - Olay ID, başlık, açıklama ve diğer parametreleri doldurun;
+   - Ek seçenekleri belirtin (örneğin, Pop Up).
+
+2. **"Tetikleyiciler" Sekmesi:**
+   - Tetikleyici ekleyin;
+   - Mantıksal operatör seçin (VE, VEYA, VE DEĞİL, VEYA DEĞİL);
+   - Alt tetikleyici ekleyin;
+   - Alt tetikleyici için parametreleri girin.
+
+3. **"Sonuçlar" Sekmesi:**
+   - Sonuç ekleyin;
+   - Buton adını ve AI seçim şansını ayarlayın;
+   - Alt sonuç ekleyin;
+   - Sonuç türünü seçin ve parametreleri girin.
+
+4. **Olayı oluşturun!**
+
+---
+
+## Olay Nasıl Çevrilir?
+
+1. **"Başlık" sekmesinde** başlık ve açıklamayı doldurun;
+2. Gerekli sonuçları ekleyin ve butonları adlandırın;
+3. **"Önizleme" sekmesine** geçin;
+4. Başlık, açıklama ve buton metinlerini girin (ipuçları görüntülenecektir);
+5. **Bundle_** alanında hedef dili seçin (*boş bırakırsanız İngilizce olur**, veya `ru` gibi dil kodunu girin**);
+6. Çevrilmiş olayı **oluşturun**!
+
+---
+
+## Üretici Arayüzü Nasıl Çevrilir?
+
+1. **languages** klasörüne gidin;
+2. Dil koduyla bir **.json** dosyası oluşturun (örneğin `TR.json`);
+3. Diğer çeviri dosyalarını örnek alarak içeriği doldurun;
+4. **languages.txt** dosyasına yeni bir satırda dil kodunu ekleyin;
+5. **trigger_outcomes** klasöründe dil koduyla bir alt klasör oluşturun (örneğin `TR`);
+6. **outcomes_desc.txt** (168 satır) ve **triggers_desc.txt** (229 satır) dosyalarını çeviriyle ekleyin;
+7. **Harikasınız!** 
+
+---
+
 Спасибо за использование нашего генератора! Если у вас есть вопросы или предложения, создайте **issue** или свяжитесь с нами.  
 Thank you for using our generator! If you have any questions or suggestions, please create an **issue** or contact us.
