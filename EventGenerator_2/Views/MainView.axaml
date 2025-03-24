@@ -76,6 +76,15 @@
 						<Run Text="{Binding ImageIDtext}"/>
 						<Run Foreground="Red" Text="*"/>
 					</TextBlock>
+					<Button
+						Margin="0 50"
+						HorizontalAlignment="Left"
+						Background="Crimson"
+						Foreground="White"
+						FontWeight="Bold"
+						Content="{Binding Clear}"
+						Command="{Binding ClearFields}"
+						VerticalAlignment="Stretch"/>
 				</StackPanel>
 				<StackPanel
 					Spacing="10"
@@ -116,6 +125,11 @@
 							   TextWrapping="WrapWithOverflow"/>
 					<TextBlock Text="{Binding PopUp}"
 							   TextWrapping="WrapWithOverflow"/>
+					<CheckBox
+						Margin="0 5"
+						Name="OnTop"
+						Content="{Binding OnTop}"
+						IsChecked="{Binding IsOnTop}"/>
 				</StackPanel>
 				<StackPanel
 					Spacing="10"
@@ -137,14 +151,6 @@
 						Margin="0 2 0 0"
 						IsChecked="{Binding IsPopUp,
 						Mode=TwoWay}"/>
-					<Button
-						HorizontalAlignment="Right"
-						Background="Crimson"
-						Foreground="White"
-						FontWeight="Bold"
-						Content="{Binding Clear}"
-						Command="{Binding ClearFields}"
-						VerticalAlignment="Stretch"/>
 				</StackPanel>
 			</Grid>
 		</TabItem>

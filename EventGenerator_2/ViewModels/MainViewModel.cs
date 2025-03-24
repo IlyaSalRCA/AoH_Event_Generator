@@ -51,6 +51,7 @@ public class MainViewModel : ViewModelBase, INotifyPropertyChanged
         TranslLang = GetString("TranslLang");
         Clear = GetString("Clear");
         //ExampleText = GetString("ExampleText");
+        OnTop = GetString("OnTop");
     }
 
     public void ChangeLang()
@@ -80,6 +81,34 @@ public class MainViewModel : ViewModelBase, INotifyPropertyChanged
             catch
             {
                 return Languages[0].Replace("\r", "");
+            }
+        }
+    }
+
+    private string _onTop;
+    public string OnTop
+    {
+        get => _onTop;
+        set
+        {
+            if (_onTop != value)
+            {
+                _onTop = value;
+                OnPropertyChanged();
+            }
+        }
+    }
+
+    private bool _isOnTop;
+    public bool IsOnTop
+    {
+        get => _isOnTop;
+        set
+        {
+            if (_isOnTop != value)
+            {
+                _isOnTop = value;
+                OnPropertyChanged();
             }
         }
     }

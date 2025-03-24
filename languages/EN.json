@@ -18,13 +18,20 @@
     "CommonText": "Common",
     "GlobalText": "Global",
     "SiegeText": "Siege",
+    "Clear": "Clear",
+    "ExampleText": "Event example:",
+    "OnTop": "Generator always on top",
 
     "Success": "Success",
-    "EvCr": "The event has been created and is on its way:",
+    "EvCr": "The event has been created and is located on the path:",
+    "TrCr": "The translation has been created and is located on the path:",
     "ShowPathText": "Show the file path",
 
     "TranslButText": "Save the Translation",
     "TranslLang": "Translation language:",
+
+    "Aler000": "Warning",
+    "Aler001": "The event has no parameter Possible to run. \nIt can only be triggered through the run_event outcome of another event, \nthe triggers of this event will not work!",
 
     "Err000": "Error!",
     "Err001": "Event ID not selected!",
