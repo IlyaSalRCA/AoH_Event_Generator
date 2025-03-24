@@ -402,7 +402,7 @@
 																<StackPanel
 																	Grid.Row="0"
 																	Orientation="Horizontal"
-																	Spacing="250">
+																	Spacing="150">
 																	<ComboBox
 																		Grid.Row="0"
 																		Width="250"
@@ -411,7 +411,6 @@
 																	<Button
 																		Width="30"
 																		Height="30"
-																		Margin="0 -5 0 0"
 																		Content="X"
 																		FontWeight="Bold"
 																		Foreground="White"
