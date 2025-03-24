@@ -1,4 +1,13 @@
 [:ru:](https://github.com/IlyaSalRCA/AoH_Event_Generator?tab=readme-ov-file#ru--%D0%B3%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B9-%D0%B4%D0%BB%D1%8F-age-of-history-3)[:us:](https://github.com/IlyaSalRCA/AoH_Event_Generator?tab=readme-ov-file#us--event-generator-for-age-of-history-3)[:cn:](https://github.com/IlyaSalRCA/AoH_Event_Generator?tab=readme-ov-file#cn-age-of-history-3-%E4%BA%8B%E4%BB%B6%E7%94%9F%E6%88%90%E5%99%A8)[:tr:](https://github.com/IlyaSalRCA/AoH_Event_Generator?tab=readme-ov-file#tr-age-of-history-3-olay-%C3%BCreticisi)
+
+<a href="https://github.com/IlyaSalRCA/AoH_Event_Generator/releases/download/aoh3/EventGenerator_Setup.exe">
+  <img src="https://img.shields.io/badge/Download-EventGenerator_Setup.exe-green?style=for-the-badge&logo=windows"/>
+</a>
+
+[![Downloads aoh3](https://img.shields.io/github/downloads/IlyaSalRCA/AoH_Event_Generator/aoh3/total?label=Downloads)](https://github.com/IlyaSalRCA/AoH_Event_Generator/releases/download/aoh3/EventGenerator_Setup.exe)
+![r](https://img.shields.io/github/v/release/IlyaSalRCA/AoH_Event_Generator)
+![l](https://img.shields.io/github/license/IlyaSalRCA/AoH_Event_Generator)
+
 # :ru:  Генератор событий для Age of History 3!
 
 Добро пожаловать в простой и удобный генератор событий для игры **Age of History 3**! Этот инструмент поможет вам создавать и настраивать события для вашей игры, а также переводить их на любой язык.
