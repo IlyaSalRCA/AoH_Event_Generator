@@ -1,3 +1,4 @@
+[:us:](https://github.com/IlyaSalRCA/AoH_Event_Generator?tab=readme-ov-file#us--event-generator-for-age-of-history-3)
 # :ru:  Генератор событий для Age of History 3!
 
 Добро пожаловать в простой и удобный генератор событий для игры **Age of History 3**! Этот инструмент поможет вам создавать и настраивать события для вашей игры, а также переводить их на любой язык.
