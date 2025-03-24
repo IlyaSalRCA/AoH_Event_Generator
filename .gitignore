@@ -3,7 +3,6 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
-# Разрешить папку EventGenerator_2.Desktop и её содержимое
 !EventGenerator_2.Desktop/
 !EventGenerator_2.Desktop/**/*
 
